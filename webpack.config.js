@@ -3,6 +3,12 @@ const path = require('path')
 
 module.exports = {
   devtool: 'source-map',
+  devServer: {
+    overlay: {
+      errors: true,
+      warnings: true
+    }
+  },
   entry: {
     'app': [
       'babel-polyfill',
